@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    rgb(157, 154, 154),
+    rgb(94, 92, 92),
+    rgb(33, 33, 33)
+  );
+}
+
+.transparent {
+  position: fixed;
+  height: 100%;
+  width: 45%;
+  background: hsl(0%, 0%, 100% / 0.1);
+  backdrop-filter: blur(10rem);
+  z-index: -1;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+}
+
+header .logo {
+  padding: 32px 0 32px 64px;
+  display: flex;
+  width: 340px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .logo img {
+  height: 64px;
+  width: auto;
+  border-radius: 100%;
+}
+
+header .logo p {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.left-container {
+  height: 80%;
+  width: 30%;
+  position: relative;
+  left: 64px;
+  text-align: center;
+}
+
+.left-container h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 28px 0;
+}
+
+.left-container h3 {
+  font-size: 50px;
+  padding: 28px 0;
+  font-weight: 400;
+}
+
+.left-container p {
+  font-size: 28px;
+  font-weight: 100;
+  color: white;
+  padding: 20px 0;
+}
+
+.left-container .buttons {
+  height: 50px;
+  width: 70%;
+  position: absolute;
+  left: 10%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left-container .buttons button {
+  font-size: 20px;
+  background-image: linear-gradient(90deg, #ff3c3c, #ff9900);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 100px;
+  box-shadow: 1px 5px rgb(44, 43, 43);
+}
+
+.left-container .buttons button a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.right-container {
+  height: 90%;
+  width: 50%;
+  position: absolute;
+  right: 90px;
+  top: 50px;
+  padding: 2rem;
+  /* background-color: #FF3C3C; */
+}
+
+.right-container .image-1 {
+  position: absolute;
+  height: 80%;
+  width: auto;
+  border-radius: 8px;
+  left: 150px;
+}
+
+.right-container .image-2 {
+  position: absolute;
+  bottom: 50px;
+  left: -10;
+  height: 150px;
+  width: 220px;
+  z-index: 1;
+  border-radius: 100%;
+  transform: rotate(20deg);
+}
+
+.right-container .image-3 {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 200px;
+  border-radius: 100px;
+  width: auto;
+  z-index: 1;
+  transform: rotate(20deg);
+}
